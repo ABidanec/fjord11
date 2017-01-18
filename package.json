@@ -1,0 +1,15 @@
+{
+  "name": "fjord",
+  "version": "1.0.0",
+  "description": "верстка с scss",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ABidanec",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "gulp": "^3.9.1"
+  }
+}
