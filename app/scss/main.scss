@@ -1,0 +1,55 @@
+@import "_variables/var";
+
+.clearfix{
+	&:after, &:before{
+		content: " ";
+		display: table;
+	}
+
+	&:after{
+		clear: both;
+	}
+}
+
+.l-center{ 
+	position: relative;
+	min-width: 960px;
+	max-width: 960px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+body{
+	font-family: $font-mon-l;
+	font-size: $font-s-def;
+}
+
+// footer bottom: 
+
+html, body{
+	height: 100%;
+}
+
+.l-wrapper{
+	position: relative;
+	min-height: 100%;
+	height: auto !important;
+	overflow: hidden;
+
+	&:after{
+		content: "";
+		display: block;
+		height: $height-footer;
+	}
+}
+
+.b-footer{
+	background: #ee0;
+	height: $height-footer;
+	margin: -$height-footer 0 0 0;
+	zoom: 1;
+}
+// end footer bottom
+
+@import "_blocks/header";
+

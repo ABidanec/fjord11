@@ -1,0 +1,41 @@
+/*fonts styles*/
+/*end fonts styles*/
+.clearfix:after, .clearfix:before {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.l-center {
+  position: relative;
+  min-width: 960px;
+  max-width: 960px;
+  width: 90%;
+  margin: 0 auto; }
+
+body {
+  font-family: "montserratlight";
+  font-size: 0.875em; }
+
+html, body {
+  height: 100%; }
+
+.l-wrapper {
+  position: relative;
+  min-height: 100%;
+  height: auto !important;
+  overflow: hidden; }
+  .l-wrapper:after {
+    content: "";
+    display: block;
+    height: 53.1875em; }
+
+.b-footer {
+  background: #ee0;
+  height: 53.1875em;
+  margin: -53.1875em 0 0 0;
+  zoom: 1; }
+
+.b-header {
+  height: 64.625em; }
