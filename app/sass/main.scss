@@ -1,0 +1,16 @@
+@import "../bower/normalize-scss/sass/normalize";
+
+@import "var";
+@import "mix/mix";
+
+// core
+@import "core/core";
+// end core
+
+// header
+@import "header/header";
+// end header
+
+// slider
+@import "slider/slider";
+// end slider

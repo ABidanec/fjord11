@@ -1,7 +1,7 @@
 {
   "name": "fjord11",
-  "dependencies": {
-    "normalize-css": "normalize.css#^5.0.0",
+  "devDependencies": {
+    "normalize-scss": "normalize.scss#^6.0.0",
     "modernizr": "2"
   }
 }

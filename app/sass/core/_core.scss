@@ -1,0 +1,66 @@
+@import "var-core";
+
+.clearfix{
+	&:after,
+	&:before{
+		content: " ";
+		display: table;
+	}
+}
+
+.clearfix{
+	&:after{
+		clear: both;
+		zoom: 1;
+	}
+}
+
+// bottom footer
+html, body{
+	height: 100%;
+}
+
+body{
+	margin: 0;
+	font-family: $mont-light;
+	font-size: $size-font;
+	color: $color-font-def;
+}
+
+.l-wrapper{
+	position: relative;
+	min-height: 100%;
+	height: auto !important;
+	overflow: hidden;
+
+	&:after{
+		content: " ";
+		display: block;
+		height: $footer-height;
+
+	}
+}
+
+.b-footer{
+	height: $footer-height;
+	margin: -$footer-height 0 0 0;
+	zoom: 1;
+}
+// end bottom footer
+
+
+.l-center{
+	position: relative;
+	width: 95%;
+	width: $site-width-def;
+	margin: 0 auto;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+}
+
+i{
+	font-style: normal;
+}

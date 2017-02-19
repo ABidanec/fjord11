@@ -1,0 +1,105 @@
+@import "_var_slider";
+
+.b-slider{
+	background: $bg-slider;
+	padding: 70px 0 56px 0;
+}
+
+.b-slider__list{
+	display: block;
+	@include transform(-45deg);
+}
+
+.b-slider__prew,
+.b-slider__next{
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	font-family: $awer;
+	font-size: 4em;
+	color: #fff;
+	border: 4px solid #fff;
+	@include border-radius(50%);
+	@include transform(-45deg);
+	opacity: .5;
+
+	&:hover{
+		opacity: 1;
+	}
+}
+
+.b-slider__prew{
+	top: 69%;
+	left: 5%;
+}
+
+.b-slider__next{
+	top: 27%;
+	left: 65%;
+}
+
+.fa-angle-left{
+	&:before{
+		position: absolute;
+		left: 29%;
+	}
+}
+
+.fa-angle-right{
+	&:before{
+		position: absolute;
+		right: 29%;
+	}
+}
+
+.b-slider__desc{
+	position: absolute;
+	background: #fff;
+	width: 45%;
+	right: -19%;
+	top: 44%;
+	@include transform(45deg);
+}
+
+.b-properties__list{
+	display: block;
+	padding: 35px 40px 60px 35px;
+}
+
+.b-properties__item{
+	padding: 16px 0 55px 83px;
+}
+
+.b-properties__item_brow{
+	background: url("../../img/min/browsers.png") no-repeat top left;
+}
+
+.b-properties__item_brief{
+	background: url("../../img/min/briefcase.png") no-repeat top left;
+}
+
+.b-properties__item_edit{
+	background: url("../../img/min/edit.png") no-repeat top left;
+}
+
+.b-properties__head{
+	margin: 0 0 27px 0;
+}
+
+.b-properties__desc{
+	color: #acacac;
+}
+
+.b-slider-btn{
+	display: block;
+	width: 100%;
+	padding: 25px 0;
+	color: #ccc;
+	text-transform: uppercase;
+	background: #000;
+	border: none;
+
+	&:hover{
+		color: #fff;
+	}
+}

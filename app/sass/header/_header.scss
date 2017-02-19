@@ -1,0 +1,127 @@
+@import "var-header";
+
+.b-header{
+	height: $height-header;
+	background-image: url("../../img/bg-header.jpg");
+	background-repeat: no-repeat;
+	background-position: top center;
+	// background-size: cover;
+}
+
+	.b-t-head{
+		height: $height-b-t-head;
+		margin: $marT-b-t-head 0 $marB-b-t-head 0;
+	}
+
+		.b-logo{
+			float: left;
+		}
+			.b-logo__link{
+				display: block;
+			}
+
+		.b-t-menu{
+			float: right;
+			margin: 0 30px 0 0;
+		}
+			.b-t-menu__item{
+				float: left;
+			}
+
+				.b-t-menu__link{
+					padding: 14px 15px;
+					font-family: $mont-light;
+					font-size: $size-f-top-menu;
+					text-transform: uppercase;
+					text-decoration: none;
+					color: #232323;
+
+					&:hover{
+						color: #000;
+					}
+				}
+
+			.b-t-menu__item_active{
+				
+				.b-t-menu__link{
+					background: #000;
+					color: #fff;
+					@include border-radius(1px);
+				}
+			}
+		.b-top-menu__btn{
+			float: right;
+			position: relative;
+			width: 20px;
+			height: 100%;
+			font-family: $awer;
+		}
+			.fa-bars{
+				position: absolute;
+				right: -30px;
+				top: -14px;
+				font-size: 1em;
+				cursor: pointer;
+			}
+
+	.b-m-head{
+		margin: 0 0 422px 0;
+	}
+		.b-slogan{
+			width: 42.7%;
+			font-family: $mont-hair;
+			font-size: $size-font-slogan;
+			text-transform: uppercase;
+			font-weight: 100;
+			margin: 0 0 0.41em 0;
+		}
+
+		.b-m-head_desc{
+			font-family: $mont-light;
+			font-size: 0.75em;
+			text-transform: uppercase;
+		}
+
+	.b-b-head{
+		margin: 0 0 129px 0;
+	}
+
+		.b-b-head__item{
+			float: left;
+			width: 31%;
+			margin: 0 1%;
+			text-align: center;
+			padding: 80px 0 0 0;
+		}
+			.b-b-head__item_mail{
+				background: url("../../img/min/mail.png") no-repeat top center;
+			}
+
+			.b-b-head__item_edit{
+				background: url("../../img/min/edit.png") no-repeat top center;
+			}
+
+			.b-b-head__item_card{
+				background: url("../../img/min/card.png") no-repeat top center;
+			}
+
+			.b-b-head__item-head{
+				height: 65px;
+				font-weight: 700;
+				text-transform: uppercase;
+			}
+
+			.b-b-head__item-desc{
+				color: #cacbcd;
+				margin: 0 0 31px 0;
+			}
+
+			.b-b-head__item-link{
+				color: $color-font-def;
+				font-weight: 700;
+				text-transform: uppercase;
+
+				&:hover{
+					color: #000;
+				}
+			}

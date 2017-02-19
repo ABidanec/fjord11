@@ -1,31 +1,34 @@
-var gulp = require("gulp"),
-	browserSync = require("browser-sync"),
-	sass = require("gulp-sass"),
-	autoprefixer = require("gulp-autoprefixer");
+var gulp = require('gulp'),
+	sass = require('gulp-sass'),
+	browserSync = require("browser-sync");
 
-gulp.task('sass', function(){
-	return gulp.src('app/scss/**/*.scss')
-				.pipe(sass().on('error', sass.logError))
-				.pipe(autoprefixer(['last 1 versions', '>1%', 'ie 8', 'ie 7'], {cascade : true}))
-				.pipe(gulp.dest('app/css'))
-				.pipe(browserSync.reload({stream : true}))
+// компиляция sass
+gulp.task('sass', function(){ 
+	gulp.src("app/sass/**/*.scss")
+		.pipe(sass().on('error', sass.logError)) // .on('error', sass.logError) - чтобы не было фатальной ошибки при синтаксической ошибки в sass файле, а только уведомление
+		.pipe(gulp.dest("app/css"));
 });
 
 gulp.task('browser-sync', function(){
 	browserSync({
-		server: {
-			baseDir : 'app'
+		server : {
+			baseDir : "app"
 		},
-		notify : false
-	});
+		notify: false
+	})
 });
 
+// таск слежения
+// gulp.task("sass:watch", function(){
+// 	gulp.watch('app/sass/**/*.scss', ['sass']);
+// });
 
-gulp.task('watch', ['sass', 'browser-sync'], function(){
-	gulp.watch('app/scss/**/*.scss', ['sass']);
+gulp.task("watch", ['browser-sync'], function(){
+	gulp.watch('app/sass/**/*.scss', ['sass']);
 	gulp.watch('app/js/**/*.js', browserSync.reload);
+	gulp.watch('app/css/**/*.css', browserSync.reload);
 	gulp.watch('app/*.html', browserSync.reload);
 });
 
+gulp.task('default', ['watch']);
 
-gulp.task("default", ["watch"]);

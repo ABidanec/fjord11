@@ -1,0 +1,14 @@
+@mixin border-radius($radius){
+	-webkit-border-radius: $radius;
+ 	   -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+            border-radius: $radius;
+}
+
+@mixin transform($deg){
+	-moz-transform: rotate($deg); /* Для Firefox */
+    -ms-transform: rotate($deg); /* Для IE */
+    -webkit-transform: rotate($deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate($deg); /* Для Opera */
+    transform: rotate($deg);
+}
