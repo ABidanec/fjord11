@@ -2,7 +2,8 @@
 
 .b-slider{
 	background: $bg-slider;
-	padding: 70px 0 56px 0;
+	padding: 20px 0 56px 0;
+	margin: 0 0 137px 0;
 }
 
 .b-slider__list{
@@ -56,7 +57,7 @@
 	position: absolute;
 	background: #fff;
 	width: 45%;
-	right: -19%;
+	right: -7%;
 	top: 44%;
 	@include transform(45deg);
 }

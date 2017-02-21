@@ -1,0 +1,32 @@
+@import "var_features";
+
+.b-features{
+	margin: 0 0 103px 0;
+}
+
+.b-features__item{
+	float: left;
+	vertical-align: top;
+	width: 28%;
+	min-height: 100%;
+	margin: 0 0 0 5%;
+
+	&:first-child{
+		margin: 0;
+	}
+}
+
+.b-features__head{
+	font-family: $mont-light;
+	font-size: 1em;
+	font-weight: 700;
+	margin: 0 0 32px 0;
+}
+
+.b-features__link{
+	font-family: $mont-black;
+	font-size: 0.75em;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000;
+}

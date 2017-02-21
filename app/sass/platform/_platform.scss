@@ -1,0 +1,31 @@
+@import "var-platform";
+
+.b-platform{
+
+}
+
+.b-platform__head{
+	font-family: $mydiand;
+	font-size: 0.75em;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 0 0 45px 0;
+}
+
+.b-platform__desc{
+	font-size: 1.125em;
+	text-align: center;
+	margin: 0 0 85px 0;
+}
+
+.b-platform__item{
+	// float: left;
+	display: inline-block;
+	width: 30%;
+	margin: 0 0 0 3%;
+
+	&:first-child,
+	&:nth-child(4n){
+		margin: 0;
+	}
+}

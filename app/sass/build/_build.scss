@@ -1,0 +1,25 @@
+@import "var_build";
+
+.b-build{
+	margin: 0 0 218px 0;
+}
+
+.b-build__head,
+.b-build__text{
+	text-align: center;
+}
+
+.b-build__head{
+	font-family: $mont-hair;
+	font-size: 4.5em;
+	font-weight: 300;
+	margin: 0 0 65px 0;
+}
+
+.b-build__text{
+	width: 45%;
+	margin: 0 auto;
+	font-family: $mont-light;
+	font-size: 1.125em;
+	font-weight: 700;
+}

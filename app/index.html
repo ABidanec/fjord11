@@ -10,6 +10,8 @@
 
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.css">
 
+    <link rel="stylesheet" href="fonts/myriand-pro-regular/styles.css">
+
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -149,7 +151,7 @@
     </section>
     <!--b-build-->
     <section class="b-features">
-        <div class="l-center">
+        <div class="l-center clearfix">
             <ul class="b-features__list">
                 <li class="b-features__item">
                     <h3 class="b-features__head">Dummy Content</h3>
@@ -157,21 +159,21 @@
                         <p>Can make website design much easier and with our shortcode manager you can now create them even faster. Choose your desired shortcode and the manager will insert it for you.
                         </p>
                     </div>
-                    <button class="b-q-btn">Learn More</button>
+                    <a href="#" class="b-features__link">Learn More</a>
                 </li>
                 <li class="b-features__item">
                     <h3 class="b-features__head">Parallax Sections</h3>
                     <div class="b-features__text">
                         <p>You can create as many sections as you like, with or without paralaxx, it’s up to you! Brooklyn does not limit your imagination,see our 8 demos.</p>
                     </div>
-                    <button class="b-q-btn">Learn More</button>
+                    <a href="#" class="b-features__link">Learn More</a>
                 </li>
                 <li class="b-features__item">
                     <h3 class="b-features__head">Clean Code</h3>
                     <div class="b-features__text">
                         <p>Brooklyn has been built with the latest submission requirements based on the WordPres Codex, everything is working as intended.</p>
                     </div>
-                    <button class="b-q-btn">Learn More</button>
+                    <a href="#" class="b-features__link">Learn More</a>
                 </li>
             </ul>
         </div>
@@ -186,11 +188,11 @@
                         <div class="b-m-slider__text">
                             <p>Your eCommerce website is just the start. Whether you are an established business or on the brink of a new idea, Squarespace gives you the tools to take your business from online store to recognized brand.</p>
                         </div>
-                        <button class="b-c-btn">Get started</button>
+                        <button class="b-m-slider__button">Get started</button>
                     </div>
-                    <img src="" alt="" class="b-m-slider__img">
+                    <img src="img/m-slider/iPad.png" alt="iPad" class="b-m-slider__img">
                 </li>
-                <li class="b-m-slider__item">
+               <!--  <li class="b-m-slider__item">
                     <div class="b-m-slider__desc">
                         <h2 class="b-m-slider__head">This will change everything</h2>
                         <div class="b-m-slider__text">
@@ -199,14 +201,15 @@
                         <button class="b-c-btn">Get started</button>
                     </div>
                     <img src="" alt="" class="b-m-slider__img">
-                </li>
+                </li> -->
             </ul>
-            <div class="b-m-slider__prev"></div>
-            <div class="b-m-slider__next"></div>
+            <div class="b-slider__prew">
+                <i class="fa-angle-left"></i>
+            </div>
         </div>
     </section>
     <!-- b-m-slider -->
-    <section class="b-platform">
+    <section class="b-platform clearfix">
         <div class="l-center">
             <h2 class="b-platform__head">Platform Features</h2>
             <div class="b-platform__desc">
@@ -402,6 +405,7 @@
     <!-- b-bottom-footer -->
 </footer>
 <!--b-footer-->
-
+<script src="bower/jquery/dist/jquery.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
