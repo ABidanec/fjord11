@@ -1,7 +1,7 @@
 @import "var-platform";
 
 .b-platform{
-
+	margin: 0 0 100px 0;
 }
 
 .b-platform__head{
@@ -21,11 +21,50 @@
 .b-platform__item{
 	// float: left;
 	display: inline-block;
-	width: 30%;
+	vertical-align: top;
+	width: 22%;
 	margin: 0 0 0 3%;
+	padding: 0 0 0 8%;
+	
+	font-family: $mydiand;
 
 	&:first-child,
 	&:nth-child(4n){
 		margin: 0;
 	}
+}
+
+.b-platform__item_gouge{
+	background: url("../../img/min/gouge.png") no-repeat top left;
+}
+
+.b-platform__item_chat{
+	background: url("../../img/min/chat.png") no-repeat top left;
+}
+
+.b-platform__item_phone{
+	background: url("../../img/min/phone.png") no-repeat top left;
+}
+
+.b-platform__item_adjust{
+	background: url("../../img/min/adjustments.png") no-repeat top left;
+}
+
+.b-platform__item_card{
+	background: url("../../img/min/card.png") no-repeat top left;
+}
+
+.b-platform__item_chart{
+	background: url("../../img/min/chart.png") no-repeat top left;
+}
+
+.b-platform__item-head{
+	font-size: 1.125em;
+	margin: 0 0 22px 0;
+}
+
+.b-platform__desc{
+	font-size: 0.875em;
+	color: $color-text-desc;
+	color: #cacbcd;;
 }
