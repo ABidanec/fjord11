@@ -1,21 +1,42 @@
 $(document).ready(function(){
 
-	 heightItemModule.action();
-	// console.log("Hello");
+	heightItemModule.action($(".b-features__list"));
+	heightItemModule.action($(".b-slogan__list"));
+	heightItemModule.action($(".b-bottom-footer_bg"));
 
 });
 
 
 var heightItemModule = (function(){
-	var	list  = $('.b-features__list'),
-		itemClass = '.b-features__item',
-		itemsArray = list.children(itemClass);
+	var maxHeight = 0; // начальное значение высоты
 
+	var _maxHeight = function(arrElements){
+		for(var i = 0; i < arrElements.length; i += 1){
 
+			elemHeight = $(arrElements[i]).height();
 
+			if(maxHeight < elemHeight){
+				maxHeight = elemHeight;
+			}
+		}
+		console.log(maxHeight);
+	}
+
+	var _heightElements = function(arrElements){
+		for(var i = 0; i < arrElements.length; i += 1){
+			$(arrElements[i]).height(maxHeight);
+		}
+	}
 	return {
-		action : function(){
+		action : function(classContainer){
+			console.log(classContainer);
+			var mainElement = classContainer, // контейнер, в которм нужно равнять дочерние блоки
+				arrElements = mainElement.children(), // массив дочерних блоков 
+				arrElementsLength = arrElements.length; // количество элементов массива
+				
 
+			_maxHeight(arrElements);
+			_heightElements(arrElements);
 		}
 	}
 })();
